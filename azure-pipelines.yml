@@ -93,7 +93,7 @@ stages:
         pathToPublish: '$(Build.ArtifactStagingDirectory)'
         artifactName: dropDacpac
       condition: succeededOrFailed()
-	  
+
 - stage: 'Dev'
   displayName: 'Deploy to the dev environment'
   dependsOn: Build
